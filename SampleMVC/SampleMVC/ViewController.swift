@@ -7,10 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Controller: UIViewController {
 
+	// MARK: Connection to the model
 	var model = Model()
 
+	// MARK: Handling the user interaction
 	@IBAction func generateButton(_ sender: UIButton) {
 		model.changeText()
 		updateLabel()
@@ -37,6 +39,7 @@ class ViewController: UIViewController {
 
 	}
 
+	// MARK: Request to the model
 	func updateLabel() {
 		label.text = model.text
 	}

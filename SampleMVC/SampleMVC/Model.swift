@@ -8,12 +8,14 @@
 import Foundation
 
 struct Model {
+	// MARK: Properties
 	var text: String = ""
 	var length: Int = 5
 
 	private var minLenght = 2
 	private var maxLenght = 10
 
+	// MARK: Methods
 	public mutating func changeText() {
 		text = randomString()
 	}
